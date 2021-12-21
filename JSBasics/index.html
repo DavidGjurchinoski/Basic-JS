@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>JS Basics</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="variables">
+        <h1>JS Basics</h1>
+        <div class="typeChange">
+          <h2>Change Type and Value of the Variable</h2>
+          <div class="btn-toolbar">
+            <button
+              onclick="changeBool()"
+              id="buttonBool"
+              style="background-color: red"
+            >
+              Type Boolean OFF
+            </button>
+            <button onclick="changeNum()" id="buttonNum">
+              Type Number OFF
+            </button>
+            <button onclick="changeString()" id="buttonString">
+              Type String OFF
+            </button>
+          </div>
+          <br />
+          <input
+            type="number"
+            id="inputNum"
+            placeholder="Type a NUMBER"
+            onkeyup="trackChangeNum(this.value)"
+          />
+          <input
+            type="text"
+            id="inputString"
+            placeholder="Type a STRING"
+            onkeyup="trackChangeString(this.value)"
+          />
+          <h3>Type of the variable: <span id="varType"></span></h3>
+          <h3>Value of the variable: <span id="varValue"></span></h3>
+        </div>
+      </div>
+      <div class="rCircle">
+        <h1>Area of Circle</h1>
+        <input type="number" id="r" placeholder="Enter the Radius" />
+        <br />
+        <button onclick="calcCircle(r.value)">Calculate</button>
+        <h3>This is the area of the circle: <span id="resultArea"></span></h3>
+      </div>
+      <div class="phones">
+        <h1>30 Phones PRICE plus TAX calculator</h1>
+        <input
+          type="number"
+          placeholder="Enter the PRICE of ONE phone"
+          id="price"
+        />
+        <br />
+        <br />
+        <input type="number" placeholder="Enter the TAX" id="tax" />
+        <br />
+        <button onclick="calculatePhones(price.value, tax.value)">
+          Calculate
+        </button>
+        <h3>This is the PRICE for 30 phones: <span id="resultPrice"></span></h3>
+        <h3>This is the TAX for 30 phones: <span id="resultTax"></span></h3>
+      </div>
+    </div>
+    <script src="jsBasics.js"></script>
+  </body>
+</html>
