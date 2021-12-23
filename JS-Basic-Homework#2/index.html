@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Homework #2</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div>
+        <h1>Part #1 Welcome</h1>
+        <input
+          type="text"
+          id="nameValue"
+          placeholder="Enter your NAME"
+          onkeyup="if(nameValue.value.length > 0 && surname.value.length > 0) nameBtn.disabled = false; else nameBtn.disabled = true"
+        />
+        <input
+          type="text"
+          id="surname"
+          placeholder="Enter your SURNAME"
+          onkeyup="if(nameValue.value.length > 0 && surname.value.length > 0) nameBtn.disabled = false; else nameBtn.disabled = true"
+        />
+        <button
+          class="btn"
+          disabled
+          id="nameBtn"
+          onclick="sayHello(nameValue.value, surname.value)"
+        >
+          Say Hello
+        </button>
+        <h2 id="hello"></h2>
+      </div>
+      <div>
+        <h1>Part #2 Chinese Zodiac?</h1>
+        <input
+          type="number"
+          id="year"
+          placeholder="What YEAR where you born?"
+          onkeyup="calculateZodiac(this.value)"
+        />
+        <h3>Your CHINESE ZODIAC sign is...</h3>
+        <h2 id="zodiacText"></h2>
+      </div>
+      <div>
+        <h1>Part #3 MAX Number</h1>
+        <input
+          type="number"
+          placeholder="Enter a NUMBER"
+          id="num"
+          onkeyup="if(this.value.length > 0) calcMaxBtn.disabled = false; else calcMaxBtn.disabled = true;"
+        />
+        <button
+          class="btn"
+          disabled
+          onclick="calcMax(num.value)"
+          id="calcMaxBtn"
+        >
+          Enter NUMBER
+        </button>
+        <h2 id="showMax"></h2>
+      </div>
+    </div>
+    <script src="strings.js"></script>
+  </body>
+</html>
