@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Homework #3</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div>
+        <h1>Part #1 Chinese Zodiac?</h1>
+        <input
+          type="number"
+          id="year"
+          placeholder="What YEAR were you born in?"
+          onkeyup="calculateZodiac(this.value)"
+        />
+        <h3>Your CHINESE ZODIAC sign is...</h3>
+        <h2 id="zodiacText"></h2>
+      </div>
+      <div>
+        <h1>Part #2</h1>
+        <label for="types"><h2>Choose what type of variable you want to input:</h2></label>
+        <select name="types" id="types" style="padding: 15px; font-size: larger; font-weight: bold; background-color: black; color: white;">
+          <option value="object">Object</option>
+          <option value="boolean">Boolean</option>
+          <option value="number">Number</option>
+          <option value="string">String</option>
+          <option value="undefined">Undefined</option>
+        </select>
+        <button class="btn" type="submit" onclick="typeVar(types.value)">Enter type</button>
+      </div>
+      <div>
+        <h1>Part #3 Converter DOG/HUMAN</h1>
+        <button class="btn" onclick="startConv()">Start Converting!</button>
+      </div>
+      <div>
+        <h1>Part #4 Teams</h1>
+        <label for="boys">
+          <h2>
+            Enter the number of BOYS on the team:</label>
+          </h2>
+        <input type="number" id="boys">
+        <label for="girls">
+          <h2>
+            Enter the number of GIRLS on the team:</label>
+          </h2>
+        <input type="number" id="girls">
+        <h3 id="teamText"></h3>
+        <button onclick="showTeam(boys.value, girls.value)" class="btn">Enter Team</button>
+      </div>
+      <div>
+        <h1>Part #5 AGE Calculator</h1>
+        <input type="number" id="born" placeholder="What year were you born in?" onkeyup="calculateAge (born.value)">
+        <h3 id="ageText"></h3>
+        <button class="btn" onclick="calcAgeThree()">Run The calculator 3 Times</button>
+      </div>
+      <div>
+        <h1>Part #6 ATM</h1>
+        <h2 id="balance" style="padding: 10px; color: white; background-color: black; max-width: fit-content; margin: 0 auto;"></h2>
+        <button class="btn" onclick="takeMoney()">Make a withdrawal</button>
+      </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
