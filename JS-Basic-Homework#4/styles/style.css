@@ -1,0 +1,30 @@
+body {
+  box-sizing: border-box;
+  background-color: burlywood;
+}
+
+.wrap {
+  text-align: center;
+}
+
+div.wrap > h1 {
+  color: rgb(0, 56, 0);
+}
+
+div.wrap > div {
+  width: 60%;
+  margin: 10px auto;
+  background-color: darkgreen;
+  padding: 20px;
+}
+
+.btn {
+  padding: 15px;
+  border: rgba(0, 0, 0, 0.39) 1px solid;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.726);
+  border-radius: 5%;
+  cursor: pointer;
+}
