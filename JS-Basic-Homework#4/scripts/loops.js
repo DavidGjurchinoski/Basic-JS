@@ -1,3 +1,5 @@
+// ===============================================FOR PART #1=============================================================
+
 const ASK = ["name", "mood", "activity"];
 let storyText = document.getElementById("story");
 
@@ -9,6 +11,8 @@ function tellStory() {
 
   storyText.innerHTML = `This is the tale of the great and wise ${story[0]}. ${story[0]} always felt ${story[1]}, and all day long they would be ${story[2]}!`;
 }
+
+// ===============================================FOR PART #2=============================================================
 
 let counter = 5;
 let numArrey = [];
@@ -31,6 +35,8 @@ function enterNum() {
   checkNumber(numArrey);
 }
 
+// ===============================================FOR PART #3=============================================================
+
 let oneLineArray = document.getElementById("oneLineArray");
 let lineArray = [];
 
@@ -48,6 +54,8 @@ function enterArray() {
     oneLineArray.innerHTML = oneLineArray.innerHTML.replace(",", " ");
   });
 }
+
+// ===============================================FOR PART #4=============================================================
 
 const print = (
   (buffer = "") =>
@@ -72,6 +80,8 @@ function generateNum() {
     }
   }
 }
+
+// ===============================================FOR PART #5============================================================
 
 let sumText = document.getElementById("sum");
 
