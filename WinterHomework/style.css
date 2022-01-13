@@ -1,0 +1,139 @@
+@keyframes boxSlide {
+  0% {
+    width: 40%;
+  }
+  30% {
+    width: 0%;
+  }
+  60% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes growRectangle {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes hitPop {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+body {
+  background-color: black;
+}
+
+body > div {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body > div > div {
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-box-shadow: 1px 2px 29px 5px rgba(0, 0, 0, 0.65);
+  box-shadow: 1px 2px 29px 5px rgba(0, 0, 0, 0.65);
+}
+
+button:disabled {
+  background-color: rgba(195, 77, 77, 0.486);
+  box-shadow: none;
+}
+
+input {
+  padding: 10px;
+  width: 33%;
+  margin: 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(40, 194, 255, 0.555);
+}
+
+.btn-success {
+  background-color: rgb(18, 209, 18);
+  color: white;
+}
+
+.btn-danger {
+  background-color: rgb(253, 0, 0);
+}
+
+.btn-info {
+  background-color: rgb(133, 220, 255);
+}
+
+#box {
+  width: 40%;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  z-index: 2;
+}
+
+.classAnimationBox {
+  animation: boxSlide 4s ease-in-out 1;
+}
+
+#christmasText {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  color: blue;
+}
+
+#rectangle {
+  margin: 0 auto;
+  background-color: green;
+}
+
+.growRectangleAnim {
+  animation: growRectangle 3s ease-in 1;
+}
+
+.growRectangleAnimFast {
+  animation: hitPop 1.8s ease-in 1 forwards;
+}
+
+#subNextNum > h3 {
+  display: inline-block;
+}
+
+#subNextNum > input {
+  width: 5%;
+}
