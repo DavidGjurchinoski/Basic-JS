@@ -3,7 +3,7 @@ let h3 = $("h3:first");
 let div = $(".changeHtml");
 
 inputsPart2.first().on("keyup", function () {
-  h3.text(inputsPart2.first().val());
+  h3.text(inputsPart2.first().val()).css("color", $("#color").val());
 });
 
 div.html(
