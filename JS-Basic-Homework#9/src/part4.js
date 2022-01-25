@@ -1,6 +1,7 @@
 $(window).on("load", function () {
-  let sum = 0;
   $("button").click(function () {
+    let sum = 0;
+    $("h1:first").text("");
     for (let input of $("input")) {
       sum += +input.value;
     }

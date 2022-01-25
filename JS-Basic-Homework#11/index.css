@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(202, 202, 202);
+  text-align: center;
+}
+
+.wrap {
+  width: 70%;
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+#todoList {
+  margin-top: 15px;
+}
+
+#todoList > div:nth-child(odd) {
+  background-color: grey;
+}
+
+input {
+  text-align: center;
+  background-color: rgba(177, 177, 177, 0);
+  padding: 5px;
+  border: 0;
+  border-bottom: 3px solid rgba(143, 143, 143, 0.281);
+  width: 400px;
+  font-weight: bolder;
+  font-size: large;
+  color: rgb(0, 0, 0);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 3px solid rgba(61, 226, 255, 0.637);
+}
+
+.btn {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
+  font-weight: bolder;
+  background-color: rgb(39, 180, 39);
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.67);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.67);
+}
+
+.btn:disabled {
+  background-color: rgba(151, 151, 151, 0.65);
+  cursor: auto;
+  box-shadow: none;
+}
+
+#todoList > div {
+  text-align: left;
+}
+
+.checkBox {
+  width: 20px;
+  height: 20px;
+}
